@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" spacing="5.0" styleClass="hawiaHBOX" stylesheets="@loginCss.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cotede.MOI.controller.MainController">
+   <children>
+      <VBox prefHeight="300.0" prefWidth="700.0">
+         <children>
+            <HBox prefHeight="554.0" prefWidth="700.0">
+               <children>
+                  <VBox prefHeight="554.0" prefWidth="700.0" style="-fx-background-color: #FAFAFA; -fx-background-radius: 5;">
+                     <children>
+                        <AnchorPane prefHeight="0.0" prefWidth="700.0" />
+                        <AnchorPane prefHeight="533.0" prefWidth="700.0">
+                           <children>
+                              <ImageView fitHeight="498.0" fitWidth="476.0" layoutX="139.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.06;">
+                                 <image>
+                                    <Image url="@../../../../../images/marriage-icon.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="440.0" layoutY="155.0" prefHeight="27.0" prefWidth="205.0" text="+ أضافة زوج / زوجة جديدة" textFill="#c0392b">
+                                 <font>
+                                    <Font name="System Bold Italic" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="100.0" layoutX="544.0" layoutY="189.0" startX="-484.0" />
+                              <Line endX="20.0" layoutX="611.0" layoutY="364.0" startX="-581.0" stroke="#c0392b" strokeWidth="0.1" />
+                              <Label layoutX="500.0" layoutY="270.0" prefHeight="17.0" prefWidth="114.0" textFill="#c0392b">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="newPassTypeCouple" alignment="CENTER_RIGHT" focusColor="#c0392b" labelFloat="true" layoutX="450.0" layoutY="291.0" prefHeight="33.0" prefWidth="183.0" promptText="نوع الجواز" />
+                              <JFXTextField fx:id="newCoupleName" alignment="CENTER_RIGHT" focusColor="#c0392b" labelFloat="true" layoutX="195.0" layoutY="228.0" prefHeight="39.0" prefWidth="205.0" promptText="الاسم الرباعي" />
+                              <JFXTextField fx:id="newPassNoCouple" alignment="CENTER_RIGHT" focusColor="#c0392b" labelFloat="true" layoutX="196.0" layoutY="293.0" onKeyTyped="#keyTyped" prefHeight="33.0" prefWidth="205.0" promptText="رقم الجواز" />
+                              <JFXTextField fx:id="newTassNoCouple" alignment="CENTER_RIGHT" focusColor="#c0392b" labelFloat="true" layoutX="450.0" layoutY="388.0" onKeyTyped="#keyTyped" prefHeight="33.0" prefWidth="183.0" promptText="رقم التصريح" />
+                              <JFXTextField fx:id="newPrevFamNameCouple" alignment="CENTER_RIGHT" focusColor="#c0392b" labelFloat="true" layoutX="197.0" layoutY="387.0" prefHeight="33.0" prefWidth="191.0" promptText="اسم العائلة السابق" />
+                              <AnchorPane layoutY="502.0" prefHeight="17.0" prefWidth="700.0" style="-fx-background-color: #c0392b;" />
+                              <JFXTextField fx:id="newHawCouple" alignment="CENTER_RIGHT" focusColor="#c0392b" labelFloat="true" layoutX="449.0" layoutY="233.0" onKeyTyped="#keyTyped" prefHeight="33.0" prefWidth="183.0" promptText="رقم الهوية" />
+                              <AnchorPane layoutY="-9.0" prefHeight="82.0" prefWidth="700.0" style="-fx-background-color: #424242;" />
+                              <AnchorPane layoutY="72.0" prefHeight="17.0" prefWidth="700.0" style="-fx-background-color: #c0392b;" />
+                              <Label fx:id="numbMsgError" alignment="CENTER" layoutX="238.0" layoutY="453.0" prefHeight="25.0" prefWidth="280.0" textFill="#ff2108" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <AnchorPane prefHeight="124.0" prefWidth="700.0">
+               <children>
+                  <JFXButton layoutX="22.0" layoutY="15.0" onAction="#insertNewCouple" prefHeight="39.0" prefWidth="93.0" styleClass="createBtn" text="+ إضافة" textFill="#f5f0f0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</HBox>

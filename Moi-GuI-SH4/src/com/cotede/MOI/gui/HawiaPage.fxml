@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="656.0" prefWidth="757.0" spacing="5.0" styleClass="hawiaHBOX" stylesheets="@loginCss.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cotede.MOI.controller.MainController">
+   <children>
+      <VBox prefHeight="731.0" prefWidth="814.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+            <HBox prefHeight="554.0" prefWidth="757.0">
+               <children>
+                  <VBox prefHeight="521.0" prefWidth="56.0" />
+                  <VBox prefHeight="521.0" prefWidth="644.0" style="-fx-background-color: #FAFAFA; -fx-background-radius: 5;">
+                     <children>
+                        <AnchorPane prefHeight="530.0" prefWidth="644.0" styleClass="hawiaAnchore">
+                           <children>
+                              <ImageView fitHeight="526.0" fitWidth="651.0" layoutX="93.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.06;">
+                                 <image>
+                                    <Image url="@../../../../../images/people-icon-circle_248718.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="374.0" layoutY="28.0" prefHeight="27.0" prefWidth="240.0" text="طلب الحصول على بطاقة الهوية" textFill="#c0392b">
+                                 <font>
+                                    <Font name="System Bold Italic" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="100.0" layoutX="513.0" layoutY="62.0" startX="-484.0" />
+                              <Line endX="95.0" layoutX="510.0" layoutY="294.0" startX="-416.0" stroke="#c0392b" strokeWidth="0.1" />
+                              <Line endX="100.0" layoutX="509.0" layoutY="403.0" startX="-421.0" stroke="#c0392b" strokeWidth="0.1" />
+                              <Label layoutX="500.0" layoutY="270.0" prefHeight="17.0" prefWidth="114.0" text="بيانات الزوج  /  الزوجة" textFill="#c0392b">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="505.0" layoutY="380.0" prefHeight="17.0" prefWidth="104.0" text="بيانات الأولاد تحت 16" textFill="#c0392b">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="hawiaType" alignment="CENTER_RIGHT" focusColor="#c0392b" layoutX="477.0" layoutY="71.0" promptText="نوع الهوية" styleClass="ht" />
+                              <JFXTextField fx:id="fatherName" alignment="CENTER_RIGHT" focusColor="#c0392b" layoutX="478.0" layoutY="104.0" promptText="اسم الأب" />
+                              <JFXTextField fx:id="hawiaNumber" alignment="CENTER_RIGHT" focusColor="#c0392b" layoutX="478.0" layoutY="132.0" onKeyPressed="#updateHawiaNumberInfo" onKeyTyped="#keyTyped" promptText="رقم الهوية" />
+                              <JFXTextField fx:id="currentAddress" alignment="CENTER_RIGHT" focusColor="#c0392b" layoutX="479.0" layoutY="164.0" promptText="عنوان السكن الحالي" />
+                              <JFXTextField fx:id="religion" alignment="CENTER_RIGHT" focusColor="#c0392b" layoutX="478.0" layoutY="194.0" promptText="الديانة" />
+                              <JFXTextField fx:id="phoneNo" alignment="CENTER_RIGHT" focusColor="#c0392b" layoutX="479.0" layoutY="226.0" onKeyTyped="#keyTyped" promptText="رقم الخلوي" />
+                              <JFXTextField fx:id="firstName" alignment="CENTER_RIGHT" focusColor="#c0392b" layoutX="284.0" layoutY="71.0" promptText="الاسم الشخصي" />
+                              <JFXTextField fx:id="grandName" alignment="CENTER_RIGHT" focusColor="#c0392b" layoutX="285.0" layoutY="104.0" promptText="اسم الجد" />
+                              <JFXTextField fx:id="prevFamily" alignment="CENTER_RIGHT" focusColor="#c0392b" layoutX="285.0" layoutY="132.0" promptText="اسم العائلة السابق" />
+                              <JFXTextField fx:id="socialStatus" alignment="CENTER_RIGHT" focusColor="#c0392b" layoutX="285.0" layoutY="194.0" promptText="الحالة الاجتماعية" />
+                              <JFXTextField fx:id="gender" alignment="CENTER_RIGHT" focusColor="#c0392b" layoutX="286.0" layoutY="226.0" promptText="الجنس" />
+                              <JFXTextField fx:id="familyName" alignment="CENTER_RIGHT" focusColor="#c0392b" layoutX="91.0" layoutY="71.0" promptText="اسم العائلة" />
+                              <JFXTextField fx:id="motherName" alignment="CENTER_RIGHT" focusColor="#c0392b" layoutX="92.0" layoutY="104.0" promptText="اسم الأم" />
+                              <JFXTextField fx:id="pinxNo" alignment="CENTER_RIGHT" focusColor="#c0392b" layoutX="92.0" layoutY="132.0" onKeyTyped="#keyTyped" promptText="رقم البنكس" />
+                              <JFXTextField fx:id="birthPlace" alignment="CENTER_RIGHT" focusColor="#c0392b" layoutX="93.0" layoutY="164.0" promptText="مكان الميلاد" />
+                              <JFXTextField fx:id="telphNo" alignment="CENTER_RIGHT" focusColor="#c0392b" layoutX="92.0" layoutY="194.0" onKeyTyped="#keyTyped" promptText="رقم التلفون" />
+                              <JFXTextField fx:id="cpHawiaNo" alignment="CENTER_RIGHT" focusColor="#c0392b" layoutX="477.0" layoutY="298.0" onKeyTyped="#keyTyped" promptText="رقم الهوية" />
+                              <JFXTextField fx:id="cpFullName" alignment="CENTER_RIGHT" focusColor="#c0392b" layoutX="478.0" layoutY="331.0" promptText="الاسم الرباعي" />
+                              <JFXTextField fx:id="cpTasNo" alignment="CENTER_RIGHT" focusColor="#c0392b" layoutX="285.0" layoutY="299.0" onKeyTyped="#keyTyped" promptText="رقم التصريح" />
+                              <JFXTextField fx:id="cpPassNo" alignment="CENTER_RIGHT" focusColor="#c0392b" layoutX="286.0" layoutY="331.0" onKeyTyped="#keyTyped" promptText="رقم الجواز" />
+                              <JFXTextField fx:id="cpPassType" alignment="CENTER_RIGHT" focusColor="#c0392b" layoutX="92.0" layoutY="298.0" promptText="نوع الجواز" />
+                              <JFXTextField fx:id="cpPrevFamily" alignment="CENTER_RIGHT" focusColor="#c0392b" layoutX="91.0" layoutY="328.0" promptText="اسم العائلة السابق" />
+                              <JFXTextField fx:id="chHawiaNo" alignment="CENTER_RIGHT" focusColor="#c0392b" layoutX="478.0" layoutY="409.0" onKeyTyped="#keyTyped" promptText="رقم الهوية" />
+                              <JFXTextField fx:id="chFirstName" alignment="CENTER_RIGHT" focusColor="#c0392b" layoutX="287.0" layoutY="410.0" promptText="الاسم الشخصي" />
+                              <JFXTextField fx:id="chGender" alignment="CENTER_RIGHT" focusColor="#c0392b" layoutX="92.0" layoutY="410.0" promptText="الجنس" />
+                              <JFXButton fx:id="createBtns" layoutX="86.0" layoutY="479.0" onAction="#insertInformationToDataBase" prefHeight="37.0" prefWidth="135.0" styleClass="createBtn" text="تكوين" textFill="#f5f0f0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </JFXButton>
+                              <AnchorPane prefHeight="526.0" prefWidth="78.0" style="-fx-background-color: #c0392b;" />
+                              <JFXDatePicker fx:id="birthDate" defaultColor="#c0392b" layoutX="250.0" layoutY="164.0" nodeOrientation="RIGHT_TO_LEFT" promptText="تاريخ الميلاد" />
+                              <JFXDatePicker fx:id="chBirthDate" defaultColor="#c0392b" layoutX="445.0" layoutY="441.0" nodeOrientation="RIGHT_TO_LEFT" promptText="تاريخ الميلاد" />
+                              <JFXButton fx:id="addNewCouple" layoutX="88.0" layoutY="368.0" onAction="#addNewCouple" prefHeight="17.0" prefWidth="37.0" style="-fx-background-color: #c0392b;" text="+" textFill="#ebebeb">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton fx:id="addNewChild" layoutX="386.0" layoutY="447.0" onAction="#addNewChild" prefHeight="17.0" prefWidth="37.0" style="-fx-background-color: #c0392b;" text="+" textFill="#ebebeb">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </JFXButton>
+                              <Label fx:id="numbMsgError" alignment="CENTER" layoutX="339.0" layoutY="490.0" prefHeight="25.0" prefWidth="280.0" textFill="#ff2108" />
+                              <Label fx:id="numbMsgErrors" alignment="CENTER" layoutX="81.0" layoutY="266.0" prefHeight="25.0" prefWidth="280.0" textFill="#ff2108" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="521.0" prefWidth="58.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+   </children>
+</HBox>

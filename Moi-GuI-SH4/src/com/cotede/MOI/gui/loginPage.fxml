@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="656.0" prefWidth="757.0" spacing="40.0" styleClass="mainLayout" stylesheets="@loginCss.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cotede.MOI.controller.MainController">
+   <children>
+      <VBox alignment="TOP_RIGHT" prefHeight="499.0" prefWidth="456.0" HBox.hgrow="ALWAYS">
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="187.0" prefWidth="362.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="64.0" prefWidth="255.0" text="تسجيل الدخول" textFill="#c0392b">
+                     <font>
+                        <Font size="33.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="120.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../images/manager-icon-54657-2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets top="60.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="125.0" prefWidth="390.0">
+               <children>
+                  <JFXTextField fx:id="username" alignment="CENTER_RIGHT" focusColor="#c0392b" labelFloat="true" prefHeight="39.0" prefWidth="333.0" promptText="اسم المستخدم">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="125.0" prefWidth="390.0">
+               <children>
+                  <JFXPasswordField fx:id="password" alignment="CENTER_RIGHT" focusColor="#c0392b" labelFloat="true" prefHeight="39.0" prefWidth="330.0" promptText="كلمة السر">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXPasswordField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="125.0" prefWidth="390.0">
+               <children>
+                  <JFXButton onAction="#cancelLogin" prefHeight="40.0" prefWidth="135.0" styleClass="btn-login" text="الغاء" textFill="#ef6950">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="60.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="enter" onAction="#enterToMainPage" prefHeight="40.0" prefWidth="135.0" styleClass="btn-login" text="دخول" textFill="#ef6950">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <Label fx:id="wrongLogin" alignment="CENTER" contentDisplay="CENTER" prefHeight="48.0" prefWidth="362.0" textFill="#c0392b">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="rightLogin" prefHeight="37.0" prefWidth="362.0" textFill="#539a34" />
+         </children>
+      </VBox>
+      <VBox fx:id="rightSideLogin" alignment="CENTER" prefHeight="425.0" prefWidth="450.0" style="-fx-background-color: #c0392b;" HBox.hgrow="ALWAYS">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../images/spinner.gif" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="370.0" text="Welcom to MOI Project" textFill="#f9fafc">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </Label>
+         </children>
+         <padding>
+            <Insets top="-60.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </VBox>
+   </children>
+</HBox>

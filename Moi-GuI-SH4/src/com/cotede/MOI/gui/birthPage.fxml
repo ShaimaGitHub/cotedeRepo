@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="656.0" prefWidth="757.0" spacing="5.0" styleClass="hawiaHBOX" stylesheets="@../../../../../loginCss.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="731.0" prefWidth="814.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+            <HBox prefHeight="554.0" prefWidth="757.0">
+               <children>
+                  <VBox prefHeight="521.0" prefWidth="56.0" />
+                  <VBox prefHeight="521.0" prefWidth="644.0" style="-fx-background-color: #FAFAFA; -fx-background-radius: 5;">
+                     <children>
+                        <AnchorPane prefHeight="530.0" prefWidth="644.0">
+                           <children>
+                              <ImageView fitHeight="526.0" fitWidth="566.0" layoutX="84.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.06;">
+                                 <image>
+                                    <Image url="@../../../../../images/Birth_Certificate-512.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="329.0" layoutY="28.0" prefHeight="27.0" prefWidth="285.0" text="طلب الحصول على بطاقة مولود جديد" textFill="#c0392b">
+                                 <font>
+                                    <Font name="System Bold Italic" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="100.0" layoutX="513.0" layoutY="62.0" startX="-360.0" />
+                              <JFXTextField alignment="CENTER_RIGHT" focusColor="#c0392b" labelFloat="true" layoutX="478.0" layoutY="161.0" promptText="اسم الأب" />
+                              <JFXTextField alignment="CENTER_RIGHT" focusColor="#c0392b" labelFloat="true" layoutX="479.0" layoutY="209.0" promptText="عنوان السكن الحالي" />
+                              <JFXTextField alignment="CENTER_RIGHT" focusColor="#c0392b" labelFloat="true" layoutX="92.0" layoutY="209.0" promptText="الديانة" />
+                              <JFXTextField alignment="CENTER_RIGHT" focusColor="#c0392b" labelFloat="true" layoutX="478.0" layoutY="116.0" promptText="الاسم الشخصي" />
+                              <JFXTextField alignment="CENTER_RIGHT" focusColor="#c0392b" labelFloat="true" layoutX="279.0" layoutY="117.0" promptText="اسم الجد" />
+                              <JFXTextField alignment="CENTER_RIGHT" focusColor="#c0392b" labelFloat="true" layoutX="278.0" layoutY="209.0" promptText="الجنس" />
+                              <JFXTextField alignment="CENTER_RIGHT" focusColor="#c0392b" labelFloat="true" layoutX="279.0" layoutY="161.0" promptText="اسم العائلة" />
+                              <JFXTextField alignment="CENTER_RIGHT" focusColor="#c0392b" labelFloat="true" layoutX="92.0" layoutY="116.0" promptText="اسم الأم" />
+                              <JFXTextField alignment="CENTER_RIGHT" focusColor="#c0392b" labelFloat="true" layoutX="93.0" layoutY="163.0" promptText="مكان الميلاد" />
+                              <JFXButton layoutX="104.0" layoutY="344.0" prefHeight="37.0" prefWidth="135.0" styleClass="createBtn" text="تكوين" textFill="#f5f0f0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </JFXButton>
+                              <AnchorPane prefHeight="526.0" prefWidth="78.0" style="-fx-background-color: #c0392b;" />
+                              <JFXDatePicker defaultColor="#c0392b" layoutX="442.0" layoutY="259.0" nodeOrientation="RIGHT_TO_LEFT" promptText="تاريخ الميلاد" />
+                              <Line endX="95.0" layoutX="520.0" layoutY="329.0" startX="-416.0" stroke="#c0392b" strokeWidth="0.1" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="521.0" prefWidth="58.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+   </children>
+</HBox>

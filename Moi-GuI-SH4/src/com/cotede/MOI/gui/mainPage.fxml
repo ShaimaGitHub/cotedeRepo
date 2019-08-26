@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXColorPicker?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="853.0" prefWidth="1180.0" spacing="5.0" style="-fx-background-color: #3c3c3c;" styleClass="hawiaHBOX" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cotede.MOI.controller.MainController">
+   <children>
+      <AnchorPane prefHeight="853.0" prefWidth="1374.0">
+         <children>
+            <TabPane layoutX="58.0" layoutY="68.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="734.0" prefWidth="1071.0" style="-fx-background-color: #ecf0f1; -fx-background-radius: 10;" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="الرئيسية">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="745.0" prefWidth="1042.0">
+                           <children>
+                              <ImageView fitHeight="697.0" fitWidth="1089.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../images/pic2.jpg" />
+                                 </image>
+                              </ImageView>
+                              <AnchorPane layoutX="-12.0" layoutY="-2.0" opacity="0.86" prefHeight="696.0" prefWidth="1053.0" style="-fx-background-color: #37474F;">
+                                 <children>
+                                    <Label layoutX="416.0" layoutY="198.0" prefHeight="45.0" prefWidth="262.0" text="الصفحة الرئيسية" textAlignment="CENTER" textFill="#f2e6e6">
+                                       <font>
+                                          <Font name="System Bold Italic" size="36.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="171.0" fitWidth="275.0" layoutX="436.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../images/cnsa-loader.gif" />
+                                       </image>
+                                    </ImageView>
+                                    <JFXButton layoutX="871.0" layoutY="495.0" onAction="#goToTreatmentsPage" prefHeight="37.0" prefWidth="136.0" style="-fx-background-color: gray;" text=" معاملات أخرى &gt;&gt;" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                    <AnchorPane layoutX="1058.0" prefHeight="681.0" prefWidth="25.0" style="-fx-background-color: #c0392b;" />
+                                 </children>
+                              </AnchorPane>
+                              <HBox alignment="CENTER" layoutX="27.0" layoutY="293.0" prefHeight="172.0" prefWidth="992.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="130.0" style="-fx-background-color: #F5F5F5; -fx-background-radius: 10;">
+                                       <children>
+                                          <ImageView fitHeight="127.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true" styleClass="img">
+                                             <image>
+                                                <Image url="@../../../../../images/people-icon-circle_248718.png" />
+                                             </image>
+                                          </ImageView>
+                                          <JFXButton contentDisplay="CENTER" onAction="#goToHawiaPage" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #c0392b;" styleClass="id-btn" text="الهوية" textFill="WHITE">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </JFXButton>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="130.0" style="-fx-background-color: #F5F5F5; -fx-background-radius: 10;">
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                       <children>
+                                          <ImageView fitHeight="127.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true" styleClass="img">
+                                             <image>
+                                                <Image url="@../../../../../images/pass.png" />
+                                             </image>
+                                          </ImageView>
+                                          <JFXButton contentDisplay="CENTER" onAction="#goToPassportPage" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #c0392b;" styleClass="pass-btn" text="جواز السفر" textFill="WHITE">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </JFXButton>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="130.0" style="-fx-background-color: #F5F5F5; -fx-background-radius: 10;">
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                       <children>
+                                          <ImageView fitHeight="127.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true" styleClass="img">
+                                             <image>
+                                                <Image url="@../../../../../images/Birth_Certificate-512.png" />
+                                             </image>
+                                          </ImageView>
+                                          <JFXButton contentDisplay="CENTER" onAction="#goToBirthPage" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #c0392b;" styleClass="birth-btn" text="المولود" textFill="WHITE">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </JFXButton>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="193.0" prefWidth="115.0" style="-fx-background-color: #F5F5F5; -fx-background-radius: 10;">
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                       <children>
+                                          <ImageView fitHeight="127.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true" styleClass="img">
+                                             <image>
+                                                <Image url="@../../../../../images/private.png" />
+                                             </image>
+                                          </ImageView>
+                                          <JFXButton contentDisplay="CENTER" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #c0392b;" styleClass="date-btn" text="خاص" textFill="#f8f3f3">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </JFXButton>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="172.0" prefWidth="129.0" style="-fx-background-color: #F5F5F5; -fx-background-radius: 10;">
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                       <children>
+                                          <ImageView fitHeight="127.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true" styleClass="img">
+                                             <image>
+                                                <Image url="@../../../../../images/marriage-icon.png" />
+                                             </image>
+                                          </ImageView>
+                                          <JFXButton contentDisplay="CENTER" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #c0392b;" styleClass="setting-btn" text="شرعي" textFill="WHITE">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </JFXButton>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="130.0" style="-fx-background-color: #F5F5F5; -fx-background-radius: 10;">
+                                       <children>
+                                          <ImageView fitHeight="127.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true" styleClass="img">
+                                             <image>
+                                                <Image url="@../../../../../images/public.png" />
+                                             </image>
+                                          </ImageView>
+                                          <JFXButton contentDisplay="CENTER" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #c0392b;" styleClass="date-btn" text="عام" textFill="#f8f3f3">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </JFXButton>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="172.0" prefWidth="126.0" style="-fx-background-color: #F5F5F5; -fx-background-radius: 10;">
+                                       <children>
+                                          <ImageView fitHeight="127.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" styleClass="img">
+                                             <image>
+                                                <Image url="@../../../../../images/advokat_set-02-512.png" />
+                                             </image>
+                                          </ImageView>
+                                          <JFXButton contentDisplay="CENTER" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #c0392b;" styleClass="setting-btn" text="تصاريح" textFill="WHITE">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </JFXButton>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="الإعدادات">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <AnchorPane layoutX="-4.0" prefHeight="683.0" prefWidth="1077.0">
+                                 <children>
+                                    <AnchorPane fx:id="test" layoutX="-32.0" layoutY="636.0" prefHeight="46.0" prefWidth="1131.0" style="-fx-background-color: #c0392b;" />
+                                    <Label layoutX="83.0" layoutY="140.0" prefHeight="25.0" prefWidth="306.0" text="قم بتحديث لون التطبيق باختيار لونك المفضل :">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Line endX="409.0" layoutX="566.0" layoutY="105.0" startX="-484.0" />
+                                    <Label layoutX="83.0" layoutY="74.0" prefHeight="27.0" prefWidth="123.0" text="إعدادات التطبيق" textFill="#c0392b">
+                                       <font>
+                                          <Font name="System Bold Italic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXColorPicker fx:id="colorPicker" layoutX="425.0" layoutY="141.0" />
+                                    <JFXButton layoutX="541.0" layoutY="141.0" prefHeight="25.0" prefWidth="87.0" text="تغيير" textFill="#c0392b" underline="true" />
+                                    <ImageView fitHeight="68.0" fitWidth="138.0" layoutX="987.0" layoutY="562.0" opacity="0.31" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../images/loading-gears-animation.gif" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab text="التاريخ">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <AnchorPane fx:id="test1" layoutX="-2.0" layoutY="634.0" prefHeight="46.0" prefWidth="1077.0" style="-fx-background-color: #c0392b;" />
+                              <Label layoutX="21.0" layoutY="30.0" prefHeight="27.0" prefWidth="171.0" text="تاريخ إنشاء المعاملة" textFill="#c0392b">
+                                 <font>
+                                    <Font name="System Bold Italic" size="18.0" />
+                                 </font>
+                              </Label>
+                              <AnchorPane fx:id="test11" layoutX="-2.0" layoutY="65.0" prefHeight="46.0" prefWidth="1077.0" style="-fx-background-color: #c0392b;" />
+                              <AnchorPane layoutY="112.0" prefHeight="523.0" prefWidth="1071.0">
+                                 <children>
+                                    <TableView id="dateTableView" fx:id="dateTableView" layoutY="-3.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="488.0" prefWidth="1077.0" styleClass="dateTableView">
+                                       <columns>
+                                          <TableColumn fx:id="no" minWidth="0.0" prefWidth="69.0" text="رقم" />
+                                          <TableColumn fx:id="FullName" minWidth="0.0" prefWidth="335.0" text="الاسم" />
+                                          <TableColumn fx:id="famName" minWidth="0.0" prefWidth="238.0" text="اسم العائلة" />
+                                          <TableColumn fx:id="TreatDate" minWidth="0.0" prefWidth="227.0" text="التاريخ" />
+                                          <TableColumn fx:id="Treatment" minWidth="0.0" prefWidth="201.0" text="المعاملة" />
+                                       </columns>
+                                    </TableView>
+                                    <JFXButton layoutX="-2.0" layoutY="485.0" prefHeight="39.0" prefWidth="545.0" style="-fx-background-color: #424242;" styleClass="nextBtn" text="التالي &gt;" textFill="WHITE" />
+                                    <JFXButton layoutX="544.0" layoutY="485.0" prefHeight="39.0" prefWidth="529.0" style="-fx-background-color: #424242;" styleClass="prevBtn" text="&lt; السابق" textFill="#f2ebeb" />
+                                 </children>
+                              </AnchorPane>
+                              <JFXButton fx:id="testLab" layoutX="133.0" layoutY="28.0" onAction="#getAllHawiNos" prefHeight="29.0" prefWidth="277.0" text=": لعرض جميع المعاملات اضغط هنا" textFill="#8d6666" underline="true">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font></JFXButton>
+                           </children></AnchorPane>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+            <AnchorPane layoutX="53.0" layoutY="820.0" prefHeight="23.0" prefWidth="1077.0" style="-fx-background-color: #ecf0f1; -fx-background-radius: 5;">
+               <children>
+                  <Label layoutX="12.0" layoutY="3.0" text="CoTeDe@2019" textAlignment="CENTER" textFill="#c0392b" underline="true">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="55.0" layoutY="21.0" prefHeight="33.0" prefWidth="1077.0" style="-fx-background-color: #ecf0f1; -fx-background-radius: 5;">
+               <children>
+                  <Label fx:id="appName" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="514.0" layoutY="1.0" prefHeight="30.0" prefWidth="510.0" text="اسم التطبيق هنا" textFill="#c0392b">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="33.0" fitWidth="36.0" layoutX="1027.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../images/officicon.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="189.0" layoutY="7.0" prefHeight="20.0" prefWidth="117.0" text="تاريخ انتهاء الاشتراك" textFill="#09bf73">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="remainingDates" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="115.0" layoutY="8.0" prefHeight="20.0" prefWidth="64.0" text=":" textAlignment="CENTER" textFill="#4a4040" />
+                  <Label fx:id="remainingDates1" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="8.0" layoutY="8.0" prefHeight="20.0" prefWidth="176.0" text=":" textAlignment="CENTER" textFill="#e40606" />
+               </children>
+            </AnchorPane>
+         </children>
+         <stylesheets>
+          
+         </stylesheets></AnchorPane>
+   </children>
+   <stylesheets>
+   
+      <URL value="@loginCss.css" />
+   </stylesheets>
+</HBox>
